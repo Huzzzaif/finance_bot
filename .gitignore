@@ -1,0 +1,5 @@
+# Ignore Python & Node dependencies
+venv/
+node_modules/
+__pycache__/
+.env
