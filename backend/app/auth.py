@@ -5,8 +5,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-cred_path = os.getenv("FIREBASE_KEY_PATH")
-cred = credentials.Certificate(cred_path)
+cred_path = os.getenv("./firebase/firebase-adminsdk.json")
+cred = credentials.Certificate("./firebase/firebase-adminsdk.json")
 firebase_admin.initialize_app
 
 def verify_firebase_token(token):
